@@ -5,7 +5,7 @@ const keys = require('./config/keys');
 
 const app = express();
 
-passport.use (
+passport.use(
 
 	new GoogleStrategy(
 		{
