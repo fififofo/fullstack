@@ -29,6 +29,7 @@ app.get(
 	})
 );
 
+// Create a route for handling google callback
 app.get('/auth/google/callback',
 	passport.authenticate('google')
 )
