@@ -1,7 +1,11 @@
 const express = require("express");
+const mongoose = require("mongoose");
+const keys = require("./config/keys");
 
 // Not assigned to anything because it's not returning anything
 require("./services/passport");
+
+mongoose.connect(keys.mongoURI);
 
 const app = express();
 
