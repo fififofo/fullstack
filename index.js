@@ -1,7 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const keys = require("./config/keys");
-const ('./models/User');
+
+// Not assigned to anything
+require("./models/User");
 
 // Not assigned to anything because it's not returning anything
 require("./services/passport");
