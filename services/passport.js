@@ -6,6 +6,10 @@ const mongoose = require("mongoose");
 // Model Class
 const User = mongoose.model("users");
 
+passport.serializeUser((user, done) => {
+	done(null, user.id);
+});
+
 passport.use(
 	new GoogleStrategy(
 		{
